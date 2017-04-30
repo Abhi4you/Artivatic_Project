@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Artivatic</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    
+    <!-- Fontawesome JS -->
+    <script src="https://use.fontawesome.com/6ea01c37dc.js"></script>    
+
+    <!-- Custom CSS -->
+    <link href="custom_library/main.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-ng-app="myApp">
+	
+	
+	<div id="wrapper">
+	
+		<div data-ui-view="sidebar"></div>
+
+        <div id="page-wrapper">
+        	
+        	<div data-ui-view="dashboard"></div>
+        	
+        </div>
+        <!-- /#page-wrapper -->
+	</div>
+    <!-- /#wrapper -->
+    
+
+	<!-- Angular -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	
+	<!-- ui-Router -->
+	<script type="text/javascript" src="built-in_library/script/angular-ui-router.min.js"></script>
+	
+	
+	
+	<!-- Zing-Chart -->
+	<script type="text/javascript" src="built-in_library/script/zingchart.min.js"></script>
+	<script type="text/javascript" src="built-in_library/script/zingchart-angularjs.js"></script>
+	
+	<!-- Angular chart -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+	<script type="text/javascript" src="built-in_library/script/angular-chart.min.js"></script>
+	
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="//cdn.jsdelivr.net/jquery/1.1.3/jquery.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script type="text/javascript" src="custom_library/script/hamburger.js"></script>
+    
+    <!-- Custome JS -->
+    <script type="text/javascript" src="custom_library/main.js"></script>
+    <script type="text/javascript" src="custom_library/service/getJsonFactory.js"></script>
+    <script type="text/javascript" src="template/dashboard/dashboardCtrl.js"></script>
+    <script type="text/javascript" src="template/Project_Activity/projectCtrl.js"></script>
+    <script type="text/javascript" src="template/Involved_Team/involvedCtrl.js"></script>
+    <script type="text/javascript" src="template/Mangers_Activity/mangersCtrl.js"></script>
+
+</body>
+
+</html>
