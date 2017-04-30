@@ -1,0 +1,28 @@
+<!-- Mangers Activity -->
+<div class="col-lg-8">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<i class="fa fa-bell fa-fw"></i> Mangers Activity
+			<div class="pull-right">
+				<div class="remove">X</div>
+				<div class="min">
+					<b>-</b>
+				</div>
+			</div>
+		</div>
+		<!-- /.panel-heading -->
+		<div class="panel-body">
+			<!-- <canvas id="bar" class="chart chart-bar" data-chart-data="data" data-chart-labels="labels" data-chart-colors="color"> chart-series="series"
+			</canvas> -->
+			<select class="selectOption" data-ng-change="getMonthJson(selectValue)" data-ng-init="selectValue = months[0]" data-ng-model="selectValue" 
+					data-ng-options="month for month in months"></select>
+
+		
+			<zingchart id="chart-2" zc-type="bar" zc-values="data" zc-width="100%" style="display:block;"></zingchart>
+			
+		</div>
+		<!-- /.panel-body -->
+	</div>
+	<!-- /.panel -->
+</div>
+<!-- /.col-lg-8 -->
