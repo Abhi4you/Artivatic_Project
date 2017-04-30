@@ -1,0 +1,44 @@
+<!-- Project Activity -->
+<div class="col-lg-12">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<i class="fa fa-bar-chart-o fa-fw"></i> Project Activity
+			<div class="pull-right">
+				<div class="btn-group">
+					<div class="remove">X</div>
+					<div class="min">
+						<b>-</b>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.panel-heading -->
+		<div class="panel-body">
+		<div class=".row">
+			Year: <select class="selectOption" data-ng-change="getMonthJson(selectYear)" data-ng-model="selectYear" 
+					data-ng-options="year for year in years"></select>
+
+			<span data-ng-show="selectYear != null">Month: </span>
+			<select class="selectOption" data-ng-change="getDayJson(selectMonth)" data-ng-model="selectMonth" 
+					data-ng-options="month for month in months" data-ng-show="selectYear != null"></select>
+		
+			<span data-ng-show="selectYear != null && selectMonth == null">Month to display :</span> 
+			<input class="numberOption" type="number" step="1" min="4" max="12" data-ng-model="rowLimit"
+				data-ng-show="selectYear != null && selectMonth == null" />
+				
+			<span data-ng-show="selectYear != null && selectMonth != null">Day to display :</span> 
+			<input class="numberOption" type="number" step="1" min="7" max="31" data-ng-model="rowLimit"
+				data-ng-show="selectYear != null && selectMonth != null" />
+		</div>
+		<br><br>
+		  <canvas id="line" class="chart chart-line" data-chart-data="data | limitTo:rowLimit" data-chart-labels="labels | limitTo:rowLimit" 
+				data-chart-series="series" data-chart-options="options" data-chart-dataset-override="datasetOverride" style="height: 70px;">
+		</canvas>
+		<!-- <zingchart id="chart-1" zc-values="mydata" zc-width="100%" style="display:block;"></zingchart> 
+			<div zingchart id="chart-1" zc-json="myJson" zc-width="100%" zc-height="568px"></div> -->
+		</div>
+		<!-- /.panel-body -->
+	</div> 
+	<!-- /.panel -->
+</div>
+<!-- /.col-lg-12 -->
