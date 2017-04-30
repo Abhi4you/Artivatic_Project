@@ -1,0 +1,23 @@
+{
+	"Employees": [{
+			"name": "Abhishek Kumar",
+			"jobTitle": "Engineer",
+			"thumb": "img/img4.gif"
+		},
+		{
+			"name": "Romin Irani",
+			"jobTitle": "Developer",
+			"thumb": "img/img1.png"
+		},
+		{
+			"name": "Neil Irani",
+			"jobTitle": "Developer",
+			"thumb": "img/img2.jpg"
+		},
+		{
+			"name": "Tom Hanks",
+			"jobTitle": "Program Directory",
+			"thumb": "img/img3.png"
+		}
+	]
+}
