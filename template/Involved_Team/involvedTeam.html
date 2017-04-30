@@ -1,0 +1,31 @@
+<!-- Involved Team -->
+<div class="col-lg-4">
+	<div class="panel panel-default content">
+		<div class="panel-heading">
+			<i class="fa fa-bell fa-fw"></i> Involved Team
+			<div class="pull-right">
+				<div class="btn-group">
+					<div class="remove">X</div>
+					<div class="min">
+						<b>-</b>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.panel-heading -->
+		<div class="panel-body">
+			<ul>
+				<li data-ng-repeat="emp in employ">
+					<img alt="" data-ng-src="{{emp.thumb}}" style="margin-right : 8px; float: left; width : 50px;">
+					<h4>{{emp.name}}</h4>
+					<h6>{{emp.jobTitle}}</h6>
+				</li>
+			</ul>
+			<input type="submit" class="btn btn-success btn-block"
+				value="Add Teammate">
+		</div>
+		<!-- /.panel-body -->
+	</div>
+	<!-- /.panel -->
+</div>
+<!-- /.col-lg-4 -->
